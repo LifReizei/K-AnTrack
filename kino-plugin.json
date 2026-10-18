@@ -1,24 +1,19 @@
 {
-  "name": "AniTrack Pro",
-  "description": "Sincronización profesional con AniList y MAL para Kino",
-  "entry": "plugin.js",
-    "id": "AniTrack Pro",
-  "name": "AniTrack Pro",
-  "version": "0.0.1",
+  "id": "AniTrack Improved",
+  "name": "AniTrack Improved",
+  "version": "0.0.3",
   "apiVersion": 7,
   "author": "LifReizei",
+  "description": "AniTrack Improved",
   "langs": ["es"],
   "nsfw": false,
   "entry": "plugin.js",
   "color": "#000000",
   "section": {
-    "label": "AniTrack Pro"
-      },
-  "categories": ["anime"],
-  "hosts": [
-    "*"
-  ],
-  "settings": [
+    "label": "AniTrack Improved"
+  },
+  "categories": ["seguimiento"],
+   "settings": [
     {
       "key": "anilist_token",
       "type": "password",
@@ -34,4 +29,5 @@
     "https://graphql.anilist.co",
     "https://api.myanimelist.net"
   ]
+  "icon": "icon.png"
 }
