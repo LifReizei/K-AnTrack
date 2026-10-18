@@ -1,15 +1,15 @@
 {
   "id": "anitrack-improved",
   "name": "AniTrack Improved",
-  "version": "0.0.3",
+  "capabilities": ["tracking"],
+  "debug": true,
+  "version": "0.0.4",
   "apiVersion": 7,
   "author": "LifReizei",
   "description": "AniTrack Improved",
   "entry": "plugin.js",
   "color": "#000000",
   "icon": "icon.png",
-  "capabilities": ["tracking"],
-  "debug": true,
    "settings": [
     {
       "key": "anilist_token",
