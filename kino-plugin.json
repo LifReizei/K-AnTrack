@@ -13,6 +13,11 @@
   "color": "#000000",
   "section": {
     "label": "AniTrack Pro"
+      },
+  "categories": ["anime"],
+  "hosts": [
+    "*"
+  ],
   "settings": [
     {
       "key": "anilist_token",
