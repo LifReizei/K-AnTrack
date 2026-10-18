@@ -1,8 +1,18 @@
 {
   "name": "AniTrack Pro",
-  "version": "2.0.0",
   "description": "Sincronización profesional con AniList y MAL para Kino",
   "entry": "plugin.js",
+    "id": "AniTrack Pro",
+  "name": "AniTrack Pro",
+  "version": "0.0.1",
+  "apiVersion": 7,
+  "author": "LifReizei",
+  "langs": ["es"],
+  "nsfw": false,
+  "entry": "plugin.js",
+  "color": "#000000",
+  "section": {
+    "label": "AniTrack Pro"
   "settings": [
     {
       "key": "anilist_token",
