@@ -23,7 +23,10 @@
     }
   ],
   "hosts": [
-    "https://graphql.anilist.co",
-    "https://api.myanimelist.net"
+    "graphql.anilist.co",
+    "api.myanimelist.net",
+    "myanimelist.net",
+    "arm.haglund.dev"
+  ],
   ]
 }
