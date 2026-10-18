@@ -8,10 +8,6 @@
   "entry": "plugin.js",
   "color": "#000000",
   "icon": "icon.png",
-  "section": {
-    "label": "AniTrack Improved"
-  },
-  "categories": ["tracking"],
   "capabilities": ["tracking"],
   "debug": true,
    "settings": [
