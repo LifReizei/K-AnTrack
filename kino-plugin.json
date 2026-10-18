@@ -1,0 +1,22 @@
+{
+  "name": "AniTrack Pro",
+  "version": "2.0.0",
+  "description": "Sincronización profesional con AniList y MAL para Kino",
+  "entry": "plugin.js",
+  "settings": [
+    {
+      "key": "anilist_token",
+      "type": "password",
+      "title": "Token de AniList (Pega el token completo aquí)"
+    },
+    {
+      "key": "mal_client_id",
+      "type": "text",
+      "title": "Client ID de MyAnimeList"
+    }
+  ],
+  "hosts": [
+    "https://graphql.anilist.co",
+    "https://api.myanimelist.net"
+  ]
+}
