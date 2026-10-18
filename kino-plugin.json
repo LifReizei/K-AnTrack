@@ -3,7 +3,6 @@
   "name": "AniTrack Improved",
   "capabilities": ["tracking"],
   "debug": true,
-  "streamHosts": "any",
   "version": "0.0.5",
   "apiVersion": 7,
   "author": "LifReizei",
@@ -23,10 +22,5 @@
       "title": "Client ID de MyAnimeList"
     }
   ],
-  "hosts": [
-    "graphql.anilist.co",
-    "api.myanimelist.net",
-    "myanimelist.net",
-    "arm.haglund.dev"
-  ],
+  "hosts": ["graphql.anilist.co", "api.myanimelist.net", "myanimelist.net", "arm.haglund.dev"],
 }
