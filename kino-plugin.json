@@ -5,14 +5,14 @@
   "apiVersion": 7,
   "author": "LifReizei",
   "description": "AniTrack Improved",
-  "langs": ["es"],
-  "nsfw": false,
   "entry": "plugin.js",
   "color": "#000000",
   "section": {
     "label": "AniTrack Improved"
   },
-  "categories": ["seguimiento"],
+  "categories": ["tracking"],
+  "capabilities": ["tracking"],
+  "debug": true,
    "settings": [
     {
       "key": "anilist_token",
