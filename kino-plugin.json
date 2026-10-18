@@ -12,13 +12,13 @@
   "icon": "icon.png",
    "settings": [
     {
-      "label": "AniList", "type": "section",
+      "label": "AniList",
       "key": "anilist_token",
       "type": "password",
       "title": "Token de AniList (Pega el token completo aquí)"
     },
     {
-      "label": "MyAnimeList", "type": "section",
+      "label": "MyAnimeList",
       "key": "mal_client_id",
       "type": "text",
       "title": "Client ID de MyAnimeList"
