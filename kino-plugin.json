@@ -3,7 +3,7 @@
   "name": "AniTrack Improved",
   "capabilities": ["tracking"],
   "debug": true,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "apiVersion": 7,
   "author": "LifReizei",
   "description": "AniTrack Improved",
@@ -12,11 +12,13 @@
   "icon": "icon.png",
    "settings": [
     {
+      "label": "AniList", "type": "section",
       "key": "anilist_token",
       "type": "password",
       "title": "Token de AniList (Pega el token completo aquí)"
     },
     {
+      "label": "MyAnimeList", "type": "section",
       "key": "mal_client_id",
       "type": "text",
       "title": "Client ID de MyAnimeList"
