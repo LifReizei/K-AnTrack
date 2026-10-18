@@ -7,6 +7,7 @@
   "description": "AniTrack Improved",
   "entry": "plugin.js",
   "color": "#000000",
+  "icon": "icon.png",
   "section": {
     "label": "AniTrack Improved"
   },
@@ -29,5 +30,4 @@
     "https://graphql.anilist.co",
     "https://api.myanimelist.net"
   ]
-  "icon": "icon.png"
 }
