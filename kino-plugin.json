@@ -1,0 +1,49 @@
+{
+  "id": "anitrack-multi",
+  "name": "AniTrack Multi (AniList + MAL)",
+  "version": "1.0.0",
+  "apiVersion": 7,
+  "author": "LifReizei",
+  "description": "Sincroniza tu progreso de anime con AniList y MyAnimeList.",
+  "entry": "plugin.js",
+  "color": "#2E51A2",
+  "icon": "icon.png",
+  "capabilities": ["tracking"],
+  "hosts": [
+    "graphql.anilist.co",
+    "api.myanimelist.net",
+    "myanimelist.net"
+  ],
+  "settings": [
+    {
+      "key": "anilist_token",
+      "label": "Token de AniList",
+      "type": "password",
+      "hint": "Pega tu token de acceso personal de AniList"
+    },
+    {
+      "key": "mal_client_id",
+      "label": "Client ID de MAL",
+      "type": "text",
+      "hint": "El Client ID de tu app en MyAnimeList"
+    },
+    {
+      "key": "mal_access_token",
+      "label": "Access Token de MAL",
+      "type": "password",
+      "hint": "Token OAuth2 de MyAnimeList (si ya lo tienes)"
+    },
+    {
+      "key": "sync_anilist",
+      "label": "Sincronizar con AniList",
+      "type": "toggle",
+      "default": true
+    },
+    {
+      "key": "sync_mal",
+      "label": "Sincronizar con MyAnimeList",
+      "type": "toggle",
+      "default": true
+    }
+  ]
+}
