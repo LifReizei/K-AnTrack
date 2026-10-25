@@ -1,0 +1,55 @@
+{
+  "id": "anitrack-oauth-guided",
+  "name": "AniTrack (Guided OAuth)",
+  "version": "1.1.0",
+  "apiVersion": 7,
+  "author": "LifReizei",
+  "description": "Sincroniza con AniList y MyAnimeList usando flujos OAuth guiados.",
+  "entry": "plugin.js",
+  "color": "#2E51A2",
+  "capabilities": ["tracking"],
+  "hosts": [
+    "graphql.anilist.co",
+    "api.myanimelist.net",
+    "myanimelist.net"
+  ],
+  "settings": [
+    {
+      "type": "section",
+      "label": "AniList (Token directo)",
+      "hint": "1. Haz clic en el enlace de abajo y autoriza la app.\n2. Serás redirigido a una página con un token en la URL (después de #access_token=).\n3. Copia ese token completo y pégalo en el campo de abajo."
+    },
+    {
+      "key": "anilist_auth_url",
+      "label": "👉 Autorizar en AniList",
+      "type": "url",
+      "hint": "https://anilist.co/api/v2/oauth/authorize?client_id=TU_CLIENT_ID_ANILIST&response_type=token",
+      "readonly": true
+    },
+    {
+      "key": "anilist_token",
+      "label": "Token de AniList",
+      "type": "password",
+      "required": false
+    },
+    {
+      "type": "section",
+      "label": "MyAnimeList (Código de autorización)",
+      "hint": "1. Haz clic en el enlace de abajo y autoriza la app.\n2. MAL te mostrará un código (o lo verás en la URL como ?code=...).\n3. Copia ese código y pégalo en el campo 'Código de autorización'.\n4. El plugin lo canjeará automáticamente por un token al primer uso."
+    },
+    {
+      "key": "mal_auth_url",
+      "label": "👉 Autorizar en MyAnimeList",
+      "type": "url",
+      "hint": "https://myanimelist.net/v1/oauth2/authorize?response_type=code&client_id=TU_CLIENT_ID_MAL&code_challenge=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&code_challenge_method=plain&redirect_uri=urn:ietf:wg:oauth:2.0:oob",
+      "readonly": true
+    },
+    {
+      "key": "mal_auth_code",
+      "label": "Código de autorización (pegar aquí)",
+      "type": "text",
+      "required": false,
+      "hint": "Pega el código que te dio MAL después de autorizar."
+    }
+  ]
+}
