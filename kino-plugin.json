@@ -1,0 +1,42 @@
+{
+  "id": "anitrack-oauth-guided",
+  "name": "AniTrack (Guided OAuth)",
+  "version": "1.1.1",
+  "apiVersion": 7,
+  "author": "LifReizei",
+  "description": "Sincroniza con AniList y MyAnimeList usando flujos OAuth guiados.",
+  "entry": "plugin.js",
+  "color": "#2E51A2",
+  "capabilities": ["tracking"],
+  "hosts": [
+    "graphql.anilist.co",
+    "api.myanimelist.net",
+    "myanimelist.net"
+  ],
+  "settings": [
+    {
+      "label": "AniList - Instrucciones",
+      "key": "anilist_help",
+      "type": "text",
+      "title": "Abre esta URL en tu navegador: https://anilist.co/api/v2/oauth/authorize?client_id=TU_CLIENT_ID_ANILIST&response_type=token — Autoriza y copia el token que aparece tras #access_token= en la URL de redirección."
+    },
+    {
+      "label": "AniList - Token",
+      "key": "anilist_token",
+      "type": "password",
+      "title": "Pega aquí el token que copiaste de AniList."
+    },
+    {
+      "label": "MAL - Instrucciones",
+      "key": "mal_help",
+      "type": "text",
+      "title": "Abre esta URL en tu navegador: https://myanimelist.net/v1/oauth2/authorize?response_type=code&client_id=TU_CLIENT_ID_MAL&code_challenge=AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&code_challenge_method=plain&redirect_uri=urn:ietf:wg:oauth:2.0:oob — Autoriza y copia el código (?code=...) que te muestre MAL."
+    },
+    {
+      "label": "MAL - Código de autorización",
+      "key": "mal_auth_code",
+      "type": "text",
+      "title": "Pega aquí el código que te dio MyAnimeList. Se canjeará por un token al primer uso."
+    }
+  ]
+}
